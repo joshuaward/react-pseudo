@@ -1,0 +1,25 @@
+.select-multiple {
+	width: 400px;
+	height: 250px;
+
+	option {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 1px;
+		padding: 4px 8px;
+		background: #e9e9e9;
+		&::before {
+			content: '';
+			width: 16px;
+			height: 16px;
+			margin-right: 4px;
+			background: url('../images/star-regular.svg') no-repeat;
+		}
+		&:checked {
+			&::before {
+				background: url('../images/star-solid.svg') no-repeat;
+			}
+		}
+	}
+}
